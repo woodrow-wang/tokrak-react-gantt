@@ -1,0 +1,10 @@
+{
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "react-gantt-antd-tokrak",
+  "repository": "",
+  "version": "1.0.12",
+  "files": [
+    "dist"
+  ]
+}

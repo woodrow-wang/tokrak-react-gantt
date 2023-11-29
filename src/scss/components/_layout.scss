@@ -1,0 +1,16 @@
+
+.rt-layout__side {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rt-layout__main {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rt-layout__timeline {
+  overflow-x: auto;
+}

@@ -1,0 +1,126 @@
+{
+  "_from": "react-gantt-antd-tokrak",
+  "_id": "react-gantt-antd-tokrak@1.0.9",
+  "_inBundle": false,
+  "_integrity": "sha512-igAwKAmkYoisGrLcCZs4aELVHN9Vtu8RqwLS3jE5imJBQHUw66h/l1mxfaU0ubpwobSkJ+Zhuqt4GeSZ5Hx61Q==",
+  "_location": "/react-gantt-antd-tokrak",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-gantt-antd-tokrak",
+    "name": "react-gantt-antd-tokrak",
+    "escapedName": "react-gantt-antd-tokrak",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-gantt-antd-tokrak/-/react-gantt-antd-1.0.9.tgz",
+  "_shasum": "3a4e9f228d03a65a2d486fa021feca3e057d2c4c",
+  "_spec": "react-gantt-antd",
+  "_where": "D:\\My Documents\\dev\\react\\react-gantt-antd-tokrak",
+  "author": {
+    "name": "icrdr"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "antd": "^4.16.10",
+    "node-sass": "^9.0.0",
+    "prop-types": "^15.7.2"
+  },
+  "deprecated": false,
+  "description": "A beautiful react gantt component with antd style.  \r This is a fork of [JSainsburyPLC/react-timelines](https://github.com/JSainsburyPLC/react-timelines)",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.23.3",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.23.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^16.8.6",
+    "rimraf": "^2.6.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "rootDir": "./src",
+    "resetMocks": true,
+    "resetModules": true,
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/utils/raf.js",
+      "<rootDir>/utils/events.js",
+      "<rootDir>/utils/computedStyle.js",
+      "<rootDir>/propTypes.js"
+    ],
+    "setupFiles": [
+      "../jestSetup.js"
+    ]
+  },
+  "keywords": [
+    "timeline",
+    "schedule",
+    "history",
+    "react",
+    "gantt",
+    "horizontal",
+    "library",
+    "scroll",
+    "scss",
+    "sass",
+    "tracks",
+    "time"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "react-gantt-antd-tokrak",
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "repository": "",
+  "scripts": {
+    "build": "npm run clean && npm run build:js && npm run build:css",
+    "build:css": "node-sass src/scss/style.scss dist/css/style.css",
+    "build:js": "babel src/ -d dist/",
+    "clean": "rimraf dist coverage",
+    "coverage": "jest --coverage --collectCoverageFrom='**/*.{js,jsx}'",
+    "demo:deploy": "./demo/ops/deploy.sh",
+    "lint": "npm run lint:prettier && npm run lint:js",
+    "lint:js": "eslint . --ext .js,.jsx",
+    "lint:js:fix": "eslint . --ext .js,.jsx --fix",
+    "lint:prettier": "prettier --list-different \"{e2e,src}/**/*.{js,jsx}\"",
+    "lint:prettier:fix": "prettier --write \"{e2e,src}/**/*.{js,jsx}\"",
+    "prepublish": "npm run clean && npm run build",
+    "test": "npm run lint && npm run unit",
+    "unit": "jest",
+    "watch": "npm run watch:js & npm run watch:css",
+    "watch:css": "node-sass -w src/scss/style.scss dist/css/style.css",
+    "watch:js": "babel -w src/ -d dist/"
+  },
+  "version": "1.0.12"
+}
